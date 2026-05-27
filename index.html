@@ -2,11 +2,19 @@
 <html lang="pt-br">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
   <title>FinanJovem</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -25,11 +33,52 @@
       id="gastos"
       placeholder="Quanto você gasta">
 
+    <input type="number"
+      id="meta"
+      placeholder="Meta de economia">
+
     <button onclick="calcular()">
       Calcular
     </button>
 
     <div id="resultado"></div>
+
+    <div class="meta">
+
+      <h3>🎯 Progresso da Meta</h3>
+
+      <div class="barra">
+
+        <div class="progresso"
+          id="progresso">
+          0%
+        </div>
+
+      </div>
+
+    </div>
+
+    <canvas id="grafico"></canvas>
+
+    <div class="dicas">
+
+      <h2>💡 Como Economizar</h2>
+
+      <ul>
+
+        <li>✅ Evite gastos desnecessários</li>
+
+        <li>✅ Guarde parte do dinheiro</li>
+
+        <li>✅ Faça metas financeiras</li>
+
+        <li>✅ Controle gastos com lazer</li>
+
+        <li>✅ Planeje suas compras</li>
+
+      </ul>
+
+    </div>
 
   </div>
 
@@ -37,22 +86,3 @@
 
 </body>
 </html>
-<div class="dicas">
-
-    <h2>💡 Como Economizar</h2>
-  
-    <ul>
-      <li>✅ Evite gastos desnecessários</li>
-  
-      <li>✅ Guarde pelo menos 10% do que ganhar</li>
-  
-      <li>✅ Faça uma lista antes de comprar</li>
-  
-      <li>✅ Controle gastos com delivery e lazer</li>
-  
-      <li>✅ Defina metas financeiras</li>
-  
-      <li>✅ Use transporte econômico quando possível</li>
-    </ul>
-  
-  </div>
